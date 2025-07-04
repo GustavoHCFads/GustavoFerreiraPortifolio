@@ -1,0 +1,230 @@
+/* Redefinindo as estruturas padrões do navegador */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definindo a fonte geral */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f0e0e;
+}
+
+/* Definindo o display para se enquadrar no tamanho da tela, alinhação e paddings para melhor visualização */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+/* Definindo tamanho da logo e cor de exibição */
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Removendo list-style e acrescentando display flex para o dinamismo */
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+/* definindo margin da lista de links na barra de navegação */
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+/* Estilizando os links antes do hover, removendo atributos padrões, */
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilizando links após o hover (ao interagir com o link)*/
+
+.nav-links a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
+.title-section {
+  width: 100%;
+  height: 110px;
+  background-size: cover; 
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.title-section h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px rgb(128, 131, 133);
+  max-width: 50%; /* Ajusta a largura do container */
+  width: 100%; /* Certifica que o container ocupa toda a largura */
+  min-height: 50vh; /* Ajusta a altura do container para 80% da altura da viewport */
+  box-sizing: border-box; /* Inclui padding e border no tamanho total */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-banner img {
+  width: 100%;
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px 8px 0 0; /* Arredonda os cantos superiores para combinar com o container */
+  object-fit: cover; /* Corta a imagem para preencher o espaço do banner se necessário */
+}
+
+
+.profile-photo img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  box-shadow: 0px 0px 8px rgb(19, 2, 80);
+}
+
+.profile-info {
+  margin-left: 20px;
+}
+
+.profile-info h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.profile-info ul {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.profile-info ul li {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.profile-info p {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.6;
+  width: 70%;
+}
+
+.experiences {
+  margin-top: 20px;
+}
+
+.experiences h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.experiences ul {
+  list-style: none;
+}
+
+.experiences ul li {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.experiences ul li strong {
+  font-weight: bold;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product-card {
+  width: 30%;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+}
+
+.product-card a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.back-green {
+  background-color: green;
+}
+
+.back-blue {
+  background-color: blue;
+
+}
+
+.back-blueBlack {
+  background-color: rgb(37, 41, 102);
+}
+
+.price {
+  font-weight: bold;
+  color: #fffdfd;
+  font-weight: bold;
+}
+
+.girar:hover{
+  transform: rotate(359deg);
+  transition: all 0.5s ease;
+}
+
+.contact-red{
+  margin-top: 30px;
+  
+}
+
+.contact-red a{
+  text-decoration: none;
+  border: 1px solid rgb(253, 253, 253);
+  color: white;
+  background-color: rgb(16, 161, 28);
+  padding: 15px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.contact-red a:hover{
+    box-shadow: 0px 0px 15px rgb(27, 245, 27);
+    transform: scale(1.05);
+    padding: 20px;
+}
