@@ -1,5 +1,6 @@
 .profile-article {
   margin-left: 20px;
+  margin-right: 20px; /* Adiciona margem dos dois lados */
 }
 
 .profile-article h2 {
@@ -10,6 +11,7 @@
 
 .profile-article ul {
   margin-bottom: 10px;
+  padding-left: 20px; /* melhora a indentação */
 }
 
 .profile-article ul li {
@@ -21,5 +23,26 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 1.6;
-  width: 70%;
+  width: 100%; /* Evita cortes em telas menores */
+  max-width: 700px; /* Limita o tamanho em telas grandes */
+}
+
+@media (max-width: 768px) {
+  .profile-article {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .profile-article h2 {
+    font-size: 22px;
+  }
+
+  .profile-article ul li {
+    font-size: 16px;
+  }
+
+  .profile-article p {
+    font-size: 18px;
+    width: 100%;
+  }
 }
